@@ -8,35 +8,56 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 45 30% 96%;
+    --foreground: 35 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 45 35% 98%;
+    --card-foreground: 35 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 45 35% 98%;
+    --popover-foreground: 35 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 35 65% 45%;
+    --primary-foreground: 45 35% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 280 35% 65%;
+    --secondary-foreground: 45 35% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 45 25% 92%;
+    --muted-foreground: 35 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 35 85% 65%;
+    --accent-foreground: 35 25% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 25% 85%;
+    --input: 35 25% 90%;
+    --ring: 35 65% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Wedding-specific design tokens */
+    --gold-primary: 35 85% 65%;
+    --gold-secondary: 35 65% 45%;
+    --cream-primary: 45 35% 98%;
+    --cream-secondary: 45 30% 96%;
+    --purple-accent: 280 35% 65%;
+    --green-accent: 120 25% 45%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--cream-primary)), hsl(var(--cream-secondary)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--gold-primary)), hsl(var(--gold-secondary)));
+    --gradient-accent: linear-gradient(45deg, hsl(var(--purple-accent)), hsl(var(--green-accent)));
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--gold-secondary) / 0.3);
+    --shadow-soft: 0 4px 20px hsl(var(--gold-primary) / 0.2);
+    
+    /* Typography */
+    --font-script: 'Dancing Script', cursive;
+    --font-serif: 'Playfair Display', serif;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +122,33 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@layer components {
+  .font-script {
+    font-family: var(--font-script);
+  }
+  
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-gold {
+    background: var(--gradient-gold);
+  }
+  
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
   }
 }

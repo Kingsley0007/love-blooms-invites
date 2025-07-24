@@ -61,7 +61,25 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				gold: {
+					primary: 'hsl(var(--gold-primary))',
+					secondary: 'hsl(var(--gold-secondary))'
+				},
+				cream: {
+					primary: 'hsl(var(--cream-primary))',
+					secondary: 'hsl(var(--cream-secondary))'
+				},
+				purple: {
+					accent: 'hsl(var(--purple-accent))'
+				},
+				green: {
+					accent: 'hsl(var(--green-accent))'
 				}
+			},
+			fontFamily: {
+				script: ['var(--font-script)'],
+				serif: ['var(--font-serif)']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
