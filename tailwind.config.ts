@@ -64,22 +64,37 @@ export default {
 				},
 				gold: {
 					primary: 'hsl(var(--gold-primary))',
-					secondary: 'hsl(var(--gold-secondary))'
+					secondary: 'hsl(var(--gold-secondary))',
+					bright: 'hsl(var(--gold-bright))'
 				},
 				cream: {
 					primary: 'hsl(var(--cream-primary))',
 					secondary: 'hsl(var(--cream-secondary))'
 				},
 				purple: {
-					accent: 'hsl(var(--purple-accent))'
+					accent: 'hsl(var(--purple-accent))',
+					bright: 'hsl(var(--purple-bright))'
 				},
 				green: {
-					accent: 'hsl(var(--green-accent))'
+					accent: 'hsl(var(--green-accent))',
+					bright: 'hsl(var(--green-bright))'
+				},
+				pink: {
+					accent: 'hsl(var(--pink-accent))'
+				},
+				coral: {
+					accent: 'hsl(var(--coral-accent))'
+				},
+				lavender: {
+					accent: 'hsl(var(--lavender-accent))'
 				}
 			},
 			fontFamily: {
 				script: ['var(--font-script)'],
-				serif: ['var(--font-serif)']
+				fancy: ['var(--font-fancy)'],
+				serif: ['var(--font-serif)'],
+				elegant: ['var(--font-elegant)'],
+				sans: ['var(--font-sans)']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
